@@ -1,0 +1,625 @@
+/* ===== RESET GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352d;
+    line-height: 1.6;
+    /* El fondo lo pones TÚ aquí abajo: */
+    background-image: linear-gradient(rgba(240, 250, 244, 0.80), rgba(240, 250, 244, 0.80)), 
+                      url("../img/Fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* ===== BARRA DE NAVEGACIÓN ===== */
+nav {
+    width: 100%;
+    min-height: 70px;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #3c8061;
+}
+nav a {
+    text-decoration: none;
+    color: #405348;
+    font-size: 16px;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #3c9b70;
+}
+
+/* ===== PORTADA ===== */
+.hero {
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+    background: rgba(233, 248, 239, 0.65);
+}
+.hero-text {
+    width: 55%;
+}
+.hero-text p:first-child {
+    color: #4b9b73;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    color: #263b30;
+    margin-bottom: 25px;
+}
+.hero p {
+    font-size: 19px;
+    color: #607168;
+    margin-bottom: 30px;
+    max-width: 650px;
+}
+
+/* ===== BOTONES ===== */
+.botones {
+    display: flex;
+    gap: 18px;
+    margin-top: 25px;
+}
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-principal {
+    background: #4c9b73;
+    color: white;
+}
+.btn-principal:hover {
+    background: #367b59;
+    transform: translateY(-2px);
+}
+.btn-secundario {
+    background: white;
+    color: #3d795b;
+    border: 2px solid #4c9b73;
+}
+.btn-secundario:hover {
+    background: #e8f6ee;
+}
+
+/* ===== CÍRCULO DECORATIVO ===== */
+.hero-decoracion {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(214, 239, 223, 0.90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    box-shadow: 0 15px 35px rgba(55, 120, 85, 0.15);
+}
+
+/* ===== SECCIÓN BIENESTAR ===== */
+.bienestar {
+    width: 100%;
+    padding: 80px 10%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.90);
+}
+.bienestar h2 {
+    font-size: 38px;
+    color: #294536;
+    margin-bottom: 15px;
+}
+.bienestar > p {
+    color: #68776f;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* ===== TARJETAS ===== */
+.tarjetas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.tarjeta {
+    background: rgba(248, 252, 250, 0.95);
+    padding: 35px 25px;
+    border-radius: 20px;
+    border: 1px solid #e1eee6;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.tarjeta .icono {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.tarjeta h3 {
+    font-size: 23px;
+    color: #315541;
+    margin-bottom: 12px;
+}
+.tarjeta p {
+    color: #697970;
+    margin-bottom: 20px;
+}
+.tarjeta a {
+    color: #438862;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== PROGRESO ===== */
+.progreso {
+    padding: 80px 10%;
+    background: rgba(234, 246, 239, 0.92);
+    text-align: center;
+}
+.progreso h2 {
+    font-size: 36px;
+    color: #294536;
+    margin-bottom: 15px;
+}
+.progreso p {
+    color: #64736b;
+    font-size: 18px;
+}
+
+/* ===== BARRA DE PROGRESO ===== */
+.barra {
+    width: 70%;
+    height: 20px;
+    background: white;
+    border-radius: 20px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+.barra-progreso {
+    width: 75%;
+    height: 100%;
+    background: #4c9b73;
+    border-radius: 20px;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background: rgba(38, 59, 48, 0.95);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+footer p {
+    margin: 5px;
+}
+
+/* ====== ESTILOS DEL FORMULARIO ====== */
+.pagina-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px 5%;
+}
+
+.formulario-container {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 50px;
+    align-items: center;
+}
+
+/* Columna izquierda — Información */
+.formulario-info {
+    padding: 30px 10px;
+}
+.formulario-info .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #3c8061;
+    margin-bottom: 25px;
+}
+.formulario-info h1 {
+    font-size: 36px;
+    color: #263b30;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.formulario-info h1 span {
+    color: #4c9b73;
+}
+.formulario-info p {
+    font-size: 17px;
+    color: #607168;
+    margin-bottom: 30px;
+}
+.formulario-info .frase {
+    font-size: 16px;
+    color: #4b8b67;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* Columna derecha — Caja del formulario */
+.formulario-box {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+.formulario-box .volver {
+    display: inline-block;
+    color: #438862;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.formulario-box .volver:hover {
+    text-decoration: underline;
+}
+.formulario-box h2 {
+    font-size: 26px;
+    color: #263b30;
+    margin-bottom: 8px;
+}
+.texto-formulario {
+    color: #607168;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Etiquetas e inputs */
+.formulario-box label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #354b3f;
+    font-weight: 500;
+    font-size: 15px;
+}
+.formulario-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cfe0d7;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s;
+}
+.formulario-box input:focus {
+    border-color: #4c9b73;
+}
+
+/* Términos y botones */
+.terminos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0;
+}
+.terminos input {
+    width: auto;
+}
+.terminos label {
+    margin: 0;
+    color: #556b5f;
+    font-size: 14px;
+}
+
+.btn-formulario {
+    width: 100%;
+    padding: 13px;
+    background: #4c9b73;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 8px;
+}
+.btn-formulario:hover {
+    background: #367b59;
+}
+
+#mensajeRegistro {
+    margin-top: 12px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.separador {
+    text-align: center;
+    margin: 25px 0 15px;
+    position: relative;
+}
+.separador span {
+    background: white;
+    padding: 0 12px;
+    color: #99a89f;
+    position: relative;
+    z-index: 1;
+}
+.separador:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #e1eee6;
+}
+
+.ya-cuenta {
+    text-align: center;
+    color: #556b5f;
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.formulario-login {
+    width: 100%;
+    padding: 11px;
+    background: white;
+    color: #438862;
+    border: 2px solid #4c9b73;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.formulario-login:hover {
+    background: #e8f6ee;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    nav {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 5%;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .hero h1 {
+        font-size: 42px;
+    }
+    .hero-decoracion {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+    .barra {
+        width: 90%;
+    }
+    /* Formulario en móvil: pasa a una sola columna */
+    .formulario-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .formulario-info {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+    .hero p {
+        font-size: 17px;
+    }
+    .botones {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+    .circulo {
+        width: 220px;
+        height: 220px;
+        font-size: 80px;
+    }
+}
+
+
+/* ====== ESTILOS - LISTA DE HÁBITOS ====== */
+
+.lista-habitos {
+    list-style: none;
+}
+
+.lista-habitos li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f7fafc;
+    font-size: 1rem;
+}
+
+.lista-habitos li:last-child {
+    border-bottom: none;
+}
+
+.lista-habitos li::before {
+    content: "✓";
+    color: #38a169;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+/* ====== ESTILOS - SECCIÓN DIARIO ====== */
+
+
+.lista-paginas {
+    list-style: none;
+}
+
+.lista-paginas li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f7fafc;
+    font-size: 1rem;
+}
+
+.lista-paginas li:last-child {
+    border-bottom: none;
+}
+
+.lista-paginas li::before {
+    content: "📄";
+    margin-right: 12px;
+}
+
+/* ====== ESTILOS - SECCIÓN ESTADO DE ÁNIMO ====== */
+
+.seleccion-animo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.seleccion-animo p {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 1.05rem;
+}
+
+.emociones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boton-emocion {
+    padding: 10px 16px;
+    background: #f7fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.boton-emocion:hover {
+    border-color: #4299e1;
+    background: #ebf8ff;
+    transform: translateY(-2px);
+}
+
+.boton-emocion.seleccionado {
+    border-color: #38a169;
+    background: #f0fff4;
+    font-weight: 600;
+}
+
+#guardar-animo {
+    padding: 12px;
+    background: linear-gradient(135deg, #4299e1, #3182ce);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-top: 8px;
+}
+
+#guardar-animo:hover {
+    transform: translateY(-2px);
+}
+
+.seccion h3 {
+    color: #2b6cb0;
+    margin: 25px 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #edf2f7;
+}
+
+.lista-animo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registro-animo {
+    background: #f7fafc;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #48bb78;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registro-animo .fecha {
+    font-weight: 600;
+    color: #2b6cb0;
+}
+
+.registro-animo .emocion {
+    font-size: 1.1rem;
+}
+
+.registro-animo .borrar {
+    padding: 5px 10px;
+    background: #fc8181;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}

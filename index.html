@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MenteSana — Tu espacio para cuidar tu bienestar emocional: seguimiento de hábitos, estado de ánimo y diario personal.">
+    <title>MenteSana — Cuida tu mente, cuida de ti</title>
+    <!-- Conexión con el archivo de estilos -->
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+
+    <!-- =========================
+         MENÚ DE NAVEGACIÓN
+         ========================= -->
+    <nav>
+        <p>🌿 MenteSana</p>
+        <div>
+            <a href="index.html">Inicio</a>
+            <a href="#habitos">Hábitos</a>
+            <a href="#animo">Estado de ánimo</a>
+            <a href="#diario">Diario</a>
+            <a href="formulario.html">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <!-- =========================
+         PORTADA PRINCIPAL
+         ========================= -->
+    <section class="hero">
+        <div class="hero-text">
+            <p>Tu bienestar es importante</p>
+            <h1>
+                Cuida tu mente,<br>
+                cuida de ti.
+            </h1>
+            <p>
+                MenteSana te ayuda a llevar un seguimiento
+                sencillo de tus hábitos, estado de ánimo
+                y pensamientos diarios.
+            </p>
+            <div class="botones">
+                <a href="formulario.html" class="btn btn-principal">
+                    Comenzar ahora
+                </a>
+                <a href="#bienestar" class="btn btn-secundario">
+                    Conocer más
+                </a>
+            </div>
+        </div>
+        <div class="hero-decoracion" aria-hidden="true">
+            <div class="circulo">🌱</div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SECCIÓN DE HERRAMIENTAS
+         ========================= -->
+    <section class="bienestar" id="bienestar">
+        <h2>Todo en un solo lugar</h2>
+        <p>Herramientas sencillas para acompañar tu bienestar.</p>
+        <div class="tarjetas">
+            <!-- HÁBITOS -->
+            <article class="tarjeta" id="habitos">
+                <div class="icono" aria-hidden="true">✅</div>
+                <h3>Mis hábitos</h3>
+                <p>Registra y controla tus hábitos diarios de manera sencilla.</p>
+                <a href="habitos.html">Ver hábitos →</a>
+            </article>
+
+            <!-- ESTADO DE ÁNIMO -->
+            <article class="tarjeta" id="animo">
+                <div class="icono" aria-hidden="true">😊</div>
+                <h3>Mi estado de ánimo</h3>
+                <p>Registra cómo te sientes cada día mediante iconos.</p>
+                <a href="animo.html">Registrar ánimo →</a>
+            </article>
+
+            <!-- DIARIO -->
+            <article class="tarjeta" id="diario">
+                <div class="icono" aria-hidden="true">📖</div>
+                <h3>Mi diario</h3>
+                <p>Escribe tus pensamientos y reflexiones de cada día.</p>
+                <a href="diario.html">Abrir diario →</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- =========================
+         PROGRESO
+         ========================= -->
+    <section class="progreso">
+        <h2>Un día a la vez 🌱</h2>
+        <p>Pequeños hábitos pueden generar grandes cambios.</p>
+        <p><strong>Progreso semanal: <span id="valor-progreso">75</span>%</strong></p>
+        <div class="barra">
+            <div class="barra-progreso" style="width: 75%;"></div>
+        </div>
+    </section>
+
+    <!-- =========================
+         PIE DE PÁGINA
+         ========================= -->
+    <footer>
+        <p>🌿 MenteSana</p>
+        <p>Tu bienestar, un día a la vez.</p>
+    </footer>
+
+    <!-- Conexión con el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

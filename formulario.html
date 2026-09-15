@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenteSana - Iniciar sesión</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body class="pagina-formulario">
+
+    <div class="formulario-container">
+        <!-- PARTE IZQUIERDA / INFORMACIÓN -->
+        <div class="formulario-info">
+            <div class="logo">🧠 MenteSana</div>
+            <h1>Un espacio para <span>cuidarte.</span></h1>
+            <p>Registra tus hábitos, conoce tu estado de ánimo y escribe tus pensamientos.</p>
+            <div class="frase">🌱 "Cada día es una nueva oportunidad para sentirte mejor."</div>
+        </div>
+
+        <!-- PARTE DERECHA / FORMULARIO -->
+        <div class="formulario-box">
+            <a href="index.html" class="volver">← Volver al inicio</a>
+            <h2>Crear una cuenta</h2>
+            <p class="texto-formulario">Regístrate para comenzar a cuidar tu bienestar.</p>
+
+            <form id="formRegistro">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" placeholder="Crea una contraseña" required>
+
+                <label for="confirmar">Confirmar contraseña</label>
+                <input type="password" id="confirmar" placeholder="Repite tu contraseña" required>
+
+                <div class="terminos">
+                    <input type="checkbox" id="terminos" required>
+                    <label for="terminos">Acepto utilizar MenteSana de manera responsable.</label>
+                </div>
+
+                <button type="submit" class="btn-formulario">Crear cuenta</button>
+            </form>
+
+            <p id="mensajeRegistro"></p>
+
+            <div class="separador"><span>o</span></div>
+
+            <p class="ya-cuenta">¿Ya tienes una cuenta?</p>
+            <button class="btn-secundario formulario-login" onclick="mostrarLogin()">Iniciar sesión</button>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

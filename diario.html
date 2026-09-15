@@ -1,0 +1,26 @@
+<section class="seccion-diario">
+    <h2>📝 Mi Diario</h2>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <a href="index.html" class="volver">← Volver al inicio</a> 
+
+    <!-- Formulario para escribir -->
+    <div class="formulario-entrada">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="entrada-diario">Escribe tu entrada:</label>
+        <textarea id="entrada-diario" rows="6" placeholder="¿Cómo te sientes hoy? ¿Qué piensas? Escribe aquí..."></textarea>
+
+        <button id="guardar-entrada">Guardar entrada</button>
+    </div>
+
+    <!-- Lista de entradas guardadas -->
+    <h3>Mis entradas</h3>
+    <div id="lista-entradas" class="lista-entradas">
+        <!-- Aquí aparecerán las entradas guardadas -->
+    </div>
+
+    <div class="resumen">
+        <strong>💡 Recordatorio:</strong> Todo se guarda automáticamente en tu navegador. ¡Escribe con libertad!
+    </div>
+</section>
