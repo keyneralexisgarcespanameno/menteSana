@@ -1,4 +1,4 @@
-/* ===== HÁBITOS ===== */
+
 let habitosCompletados = 0;
 function completarHabito(boton) {
     if (!boton.classList.contains("completado")) {
